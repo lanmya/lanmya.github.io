@@ -35,4 +35,56 @@
         <tag>Galgame</tag>
       </tags>
   </entry>
+  <entry>
+    <title>托管ClouDNS免费域名到CF优选IP加速网站访问</title>
+    <url>/2024/07/05/%E6%89%98%E7%AE%A1ClouDNS%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E5%88%B0CF%E4%BC%98%E9%80%89IP%E5%8A%A0%E9%80%9F%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE/</url>
+    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>ClouDNS是一家提供免费DNS托管及域名注册服务的公司。主要特点如下:</p>
+<p>-[] 提供免费DNS托管服务,可以免费将域名指向到你的网站或博客服务器。支持多种记录类型如A记录、CNAME记录、MX记录等。</p>
+<p>-[] 提供免费二级域名注册,*.dns-dynamic.net,可以用于项目测试或搭建临时站点。但是这些域名没有所有权,ClouDNS可以在任何时间收回。</p>
+<p>-[] 支持域名隐私保护,可以在域名注册时选择是否公开注册信息。</p>
+<p>-[] 完全免费,无需任何费用。</p>
+<p>他们家的二级域名可以托管到Clouflare,本期讲解一下如何进行ip优选。</p>
+<h3 id="登录ClouDNS"><a href="#登录ClouDNS" class="headerlink" title="登录ClouDNS"></a>登录ClouDNS</h3><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://im.sp01.dns-dynamic.net/file/c4b771afce67ad7ac851c.png"
+                      alt="1"
+                ></p>
+<h3 id="进入dns管理"><a href="#进入dns管理" class="headerlink" title="进入dns管理"></a>进入dns管理</h3><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://im.sp01.dns-dynamic.net/file/cce635702167781bb7d09.png"
+                      alt="2"
+                ></p>
+<p>接着在clouflare上托管域名，输入cloudflare提供的两个NS记录。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://im.sp01.dns-dynamic.net/file/c42ab3c2daddbb471d746.png"
+                      alt="3"
+                ></p>
+<p>我之前已经解析过了。需要主要的是，ClouDNS最大支持50记录值，每月500k查询主机次数。但这对我们普通人来说足够用了。</p>
+<h3 id="在解析过程中的一些问题"><a href="#在解析过程中的一些问题" class="headerlink" title="在解析过程中的一些问题"></a>在解析过程中的一些问题</h3><p>二级域名通过NS托管到了Clouflare上。理论来说之后的三级域名是cloudflare直接解析。结果三级域名当时ping的时候直接解析失败。难道是ClouDNS问题？后来在ClouDNS上添加了三级域名的NS记录后瞬间解析成功。原来CLouDNS并不是完全托管到CF上的，相当于半残废。既然要通过NS记录才能解析成功，是否可以通过A记录来固定CDNip。结果是可以的，后来通过itdog ping也是记录的ip值。通过这样达到加速网站访问。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://im.sp01.dns-dynamic.net/file/eea47d9de3311733f703b.png"
+                      alt="4"
+                ></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://im.sp01.dns-dynamic.net/file/dbb3b1cf99507469bfd54.png"
+                      alt="5"
+                ></p>
+<h3 id="关于自己的域名ip如何优选"><a href="#关于自己的域名ip如何优选" class="headerlink" title="关于自己的域名ip如何优选"></a>关于自己的域名ip如何优选</h3><p>使用到的是CloudflareSaaS回源技术，这个需要使用2个域名。</p>
+<p>具体可以看这篇文章 <a class="link"   href="https://dooo.ng/archives/1701171631107" >[教程] 通过CloudFlare+SaaS回源优选IP使国内用户高速访问网站 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+      <categories>
+        <category>网站搭建</category>
+      </categories>
+      <tags>
+        <tag>Cloudflare</tag>
+      </tags>
+  </entry>
 </search>
