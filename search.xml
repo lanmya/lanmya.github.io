@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2024/07/05/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>七月动画推荐-《ATRI -My Dear Moments》</title>
     <url>/2024/07/05/%E4%B8%83%E6%9C%88%E5%8A%A8%E7%94%BB%E6%8E%A8%E8%8D%90/</url>
     <content><![CDATA[<h4 id="游戏介绍："><a href="#游戏介绍：" class="headerlink" title="游戏介绍："></a>游戏介绍：</h4><p>《ATRI -My Dear Moments》是一部設定在海平面上升淹沒了大量土地、威脅人類生存的世界中的動畫作品。主角斑鳩夏生因意外失去右腿，在與研究院老師產生矛盾後休學，移居到海邊小鎮，與青梅竹馬神白水菜萌重逢。在某天早上醒來時，夏生遇見了自稱是討債人的凱瑟琳，她要求夏生找到已故祖母的遺產用於還債。夏生下潛至海中的祖母故居打撈起了機器人少女亞托莉。亞托莉自稱在 45 天後便要與夏生分別，並請求夏生在這 45 天內與她同居，並執行她前主人給她下達的「最後的命令」。夏生與亞托莉的共同生活讓夏生對亞托莉產生好感，但後來發現亞托莉的感情全是機器演算出來的，受到打擊後要求亞托莉停止假裝擁有「心」。亞托莉的不幸過去包括被創作者設計為擁有 “心”，卻因打人事件導致同型號機器人被回收，唯獨她逃脫，並為了保護夏生的母親而繼續假裝沒有 “心”。亞托莉隨後成為夏生的新主人，並在與夏生相處的過程中漸漸展現了擁有「心」的本性。遊戲根據玩家選擇的不同可能出現好或壞的結局，最終解鎖的真結局設定在 60 年後，展示了人類移居到超巨型浮體都市、夏生與水菜萌成為夫妻並繼續牽掛亞托莉的故事。</p>
@@ -70,7 +52,7 @@
                       alt="3"
                 ></p>
 <p>我之前已经解析过了。需要主要的是，ClouDNS最大支持50记录值，每月500k查询主机次数。但这对我们普通人来说足够用了。</p>
-<h3 id="在解析过程中的一些问题"><a href="#在解析过程中的一些问题" class="headerlink" title="在解析过程中的一些问题"></a>在解析过程中的一些问题</h3><p>二级域名通过NS托管到了Clouflare上。理论来说之后的三级域名是cloudflare直接解析。结果三级域名当时ping的时候直接解析失败。难道是ClouDNS问题？后来在ClouDNS上添加了三级域名的NS记录后瞬间解析成功。原来CLouDNS并不是完全托管到CF上的，相当于半残废。既然要通过NS记录才能解析成功，是否可以通过A记录来固定CDNip。结果是可以的，后来通过itdog ping也是记录的ip值。通过这样达到加速网站访问。</p>
+<h3 id="在解析过程中的一些问题"><a href="#在解析过程中的一些问题" class="headerlink" title="在解析过程中的一些问题"></a>在解析过程中的一些问题</h3><p>二级域名通过NS托管到了Clouflare上。理论来说之后的三级域名是cloudflare直接解析。结果三级域名当时ping的时候直接解析失败。后来在ClouDNS上添加了三级域名的NS记录后瞬间解析成功。原来CLouDNS并不是完全托管到CF上的，是双向解析，在cf上相当于半残废。既然要通过NS记录才能解析成功，是否可以通过A记录来固定CDNip。结果是可以的，后来通过itdog ping也是记录的ip值。通过这样达到加速网站访问。</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
