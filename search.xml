@@ -35,20 +35,20 @@
 <h3 id="登录ClouDNS"><a href="#登录ClouDNS" class="headerlink" title="登录ClouDNS"></a>登录ClouDNS</h3><p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://im.sp01.dns-dynamic.net/file/c4b771afce67ad7ac851c.png"
+                     data-src="https://im.203666.xyz/file/58c9a1c56f9b742be77ad.png"
                       alt="1"
                 ></p>
 <h3 id="进入dns管理"><a href="#进入dns管理" class="headerlink" title="进入dns管理"></a>进入dns管理</h3><p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://im.sp01.dns-dynamic.net/file/cce635702167781bb7d09.png"
+                     data-src="https://im.203666.xyz/file/bb3648b3df84d71585eb2.png"
                       alt="2"
                 ></p>
 <p>接着在clouflare上托管域名，输入cloudflare提供的两个NS记录。</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://im.sp01.dns-dynamic.net/file/c42ab3c2daddbb471d746.png"
+                     data-src="https://im.203666.xyz/file/380ddb88754e875b380b7.png"
                       alt="3"
                 ></p>
 <p>我之前已经解析过了。需要主要的是，ClouDNS最大支持50记录值，每月500k查询主机次数。但这对我们普通人来说足够用了。</p>
@@ -56,15 +56,16 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://im.sp01.dns-dynamic.net/file/eea47d9de3311733f703b.png"
+                     data-src="https://im.203666.xyz/file/99f4014c86ac845167851.png"
                       alt="4"
                 ></p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://im.sp01.dns-dynamic.net/file/dbb3b1cf99507469bfd54.png"
+                     data-src="https://im.203666.xyz/file/92a2447b8aabb30a10d8b.png"
                       alt="5"
                 ></p>
+<p>本次教程搭建的<a class="link"   href="https://im.sp01.dns-dynamic.net/" >demo站 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <h3 id="关于自己的域名ip如何优选"><a href="#关于自己的域名ip如何优选" class="headerlink" title="关于自己的域名ip如何优选"></a>关于自己的域名ip如何优选</h3><p>使用到的是CloudflareSaaS回源技术，这个需要使用2个域名。</p>
 <p>具体可以看这篇文章 <a class="link"   href="https://dooo.ng/archives/1701171631107" >[教程] 通过CloudFlare+SaaS回源优选IP使国内用户高速访问网站 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 ]]></content>
